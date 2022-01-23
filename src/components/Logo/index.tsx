@@ -3,7 +3,7 @@ import * as S from './styles'
 export type LogoProps = {
   color?: 'black' | 'white'
   size?: 'normal' | 'large'
-  hideOnMobile: boolean
+  hideOnMobile?: boolean
 }
 
 const Logo = ({
