@@ -33,6 +33,8 @@ describe('<Banner />', () => {
       `${props.buttonLink}`
     )
 
+    expect(screen.getByRole('img', { name: /Defy death/i })).toBeInTheDocument()
+
     expect(screen.getByLabelText(/Defy death/i)).toHaveAttribute(
       'src',
       `${props.img}`
