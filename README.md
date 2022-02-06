@@ -3,7 +3,7 @@ A ideia é criar esse projeto para aprender Next.js com TypeScript
 
 ## Status: Criando os componentes com testes e storybook
 
-##  Ouqe estou utilziando no projeto
+##  Oque estou utilizando no projeto
 
 
 This project uses lot of stuff as:
