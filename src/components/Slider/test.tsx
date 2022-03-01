@@ -30,7 +30,8 @@ describe('<Slider />', () => {
         <Slide>4</Slide>
         <Slide>5</Slide>
         <Slide>6</Slide>
-      </Slider>)
+      </Slider>
+    )
 
     expect(screen.getByRole('heading', { name: /Slider/i })).toBeInTheDocument()
 
