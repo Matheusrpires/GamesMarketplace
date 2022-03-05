@@ -6,11 +6,6 @@ import Slider, { SliderSettings } from 'components/Slider'
 
 import * as S from './styles'
 
-type GameCardSliderProps = {
-  items: GameCardProps[]
-  color?: 'white' | 'black'
-}
-
 const settings: SliderSettings = {
   slidesToShow: 4,
   infinite: false,
@@ -49,7 +44,12 @@ const settings: SliderSettings = {
   prevArrow: <ArrowLeft aria-label="previous games" />
 }
 
-const GameCardSlider = ({ items, color = 'black' }: GameCardSliderProps) => (
+export type GameCardSliderProps = {
+  items: GameCardProps[]
+  color?: 'white' | 'black'
+}
+
+const GameCardSlider = ({ items, color = 'white' }: GameCardSliderProps) => (
   <S.Wrapper color={color}>
     <Slider settings={settings}>
       {items.map((item, index) => (
