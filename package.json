@@ -26,6 +26,7 @@
     ]
   },
   "dependencies": {
+    "@testing-library/user-event": "12.1.8",
     "next": "10.0.4",
     "next-pwa": "^5.0.2",
     "react": "17.0.1",
