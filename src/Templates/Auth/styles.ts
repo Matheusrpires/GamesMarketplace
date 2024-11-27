@@ -50,6 +50,11 @@ export const BannerContent = styled.div`
     display: grid;
     grid-template-columns: 1fr;
     justify-content: space-between;
+
+    a {
+      width: fit-content;
+      height: fit-content;
+    }
   `}
 `
 
@@ -75,10 +80,6 @@ export const Footer = styled.p`
 
 export const Content = styled.div`
   ${({ theme }) => css`
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
     background-color: ${theme.colors.white};
     display: grid;
     align-items: center;
