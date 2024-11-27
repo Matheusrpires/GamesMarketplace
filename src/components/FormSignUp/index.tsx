@@ -1,15 +1,19 @@
-/* eslint-disable react/no-unescaped-entities */
 import Link from 'next/link'
-import { Email, Lock } from 'styled-icons/material-outlined'
-
 import TextField from 'components/TextField'
 import Button from 'components/Button'
-import * as S from './styles'
+import { AccountCircle, Email, Lock } from 'styled-icons/material-outlined'
 import { FormLink, FormWrapper } from 'components/Form'
 
-const FormSignIn = () => (
+const FormSignUp = () => (
   <FormWrapper>
     <form>
+      <TextField
+        name="name"
+        placeholder="name"
+        type="text"
+        icon={<AccountCircle />}
+      />
+
       <TextField
         name="email"
         placeholder="Email"
@@ -24,20 +28,25 @@ const FormSignIn = () => (
         icon={<Lock />}
       />
 
-      <S.ForgotPassword href="#">Forgot your password?</S.ForgotPassword>
+      <TextField
+        name="confirmPassword"
+        placeholder="Confirm Password"
+        type="password"
+        icon={<Lock />}
+      />
 
       <Button size="large" fullWidth>
         Sign in now
       </Button>
 
       <FormLink>
-        Don't have an account?
-        <Link href="/sign-up">
-          <a> Sign up</a>
+        Already have an account?
+        <Link href="/sign-in">
+          <a> Sign in</a>
         </Link>
       </FormLink>
     </form>
   </FormWrapper>
 )
 
-export default FormSignIn
+export default FormSignUp
