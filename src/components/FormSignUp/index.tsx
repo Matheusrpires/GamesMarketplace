@@ -36,7 +36,7 @@ const FormSignUp = () => (
       />
 
       <Button size="large" fullWidth>
-        Sign in now
+        Sign up now
       </Button>
 
       <FormLink>
